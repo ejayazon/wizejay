@@ -1,6 +1,6 @@
 {{>navbar_home}}
 
-<section class="slider">
+<section id="home" class="slider scrollspy">
   <ul class="slides">
     <li>
       <img src="img/img1.jpeg" alt="">
@@ -32,7 +32,7 @@
   </ul>
 </section>
 
-<section class="section section-search teal darken-1 white-text center">
+<section id="search" class="section section-search teal darken-1 white-text center scrollspy">
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -45,7 +45,7 @@
   </div>
 </section>
 
-<section class="section section-icons center">
+<section id="icons" class="section section-icons center scrollspy">
   <div class="container">
     <div class="row">
       <div class="col s12 m4">
@@ -73,7 +73,7 @@
   </div>
 </section>
 
-<section class="section section-popular center">
+<section id="popular" class="section section-popular center scrollspy">
   <div class="container">
     <div class="row">
       <h4 class="center"><span class="teal-text">Popular Tourist Spots</span></h4>
@@ -125,7 +125,7 @@
   </div>
 </section>
 
-<section class="section section-follow teal darken-1 white-text center">
+<section id="follow" class="section section-follow teal darken-1 white-text center scrollspy">
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -154,6 +154,102 @@
   </div>
 </section>
 
+<section id="gallery" class="section section-gallery scrollspy">
+  <div class="container">
+    <h4 class="center">
+      <span class="teal-text">Photo Gallery</span>
+    </h4>
+    <div class="row">
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?beach" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?travel" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?sunset" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?paradise" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?beacher" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?hike" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?swimming" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?traveling" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?hiking" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?traveling" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?sea" alt="">
+      </div>
+      <div class="col s12 m3">
+        <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?mountains" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section-contact scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card-panel teal white-text center">
+          <i class="material-icons medium">email</i>
+          <h5>Contact Us</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quibusdam quos officiis vero omnis
+            iste officia atque culpa?</p>
+        </div>
+        <ul class="collection with-header">
+          <li class="collection-header">
+            <h4>Location</h4>
+          </li>
+          <li class="collection-item">TravelVille Agency</li>
+          <li class="collection-item">54E Horseshoe Street</li>
+          <li class="collection-item">Quezon City, Philippines</li>
+        </ul>
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel grey lighten-3">
+          <h5>Please fill out this form</h5>
+          <div class="input-field">
+            <input type="text" id="name">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="email">
+            <label for="email">E-mail</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="phone">
+            <label for="phone">Phone</label>
+          </div>
+          <div class="input-field">
+            <textarea class="materialize-textarea" id="message"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <input type="submit" value="Submit" class="btn">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{>footer_home}}
 <script>
   $(document).ready(function () {
     $('.slider').slider({
@@ -174,5 +270,7 @@
       },
       minLength: 0,
     });
+
+    $('.scrollspy').scrollSpy();
   });
 </script>
