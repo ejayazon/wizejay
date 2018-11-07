@@ -18,11 +18,15 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-  res.render('client/home');
+  res.render('client/project_a');
+});
+
+app.get('/project_b', function(req, res) {
+  res.render('client/project_b');
 });
 
 app.listen(4000, function() {
   console.log('Server started at port 4000');
 });
 
-// app.listen(PORT);
+app.listen(PORT);
