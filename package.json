@@ -1,0 +1,24 @@
+{
+  "name": "wizejay",
+  "version": "1.0.0",
+  "description": "project trial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejayazon/wizejay.git"
+  },
+  "author": "ejayazon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejayazon/wizejay/issues"
+  },
+  "homepage": "https://github.com/ejayazon/wizejay#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "pg": "^7.6.0"
+  }
+}
