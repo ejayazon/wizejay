@@ -1,0 +1,206 @@
+<header class="main-header-inner">
+  <title>Project 2</title>
+  <nav class="transparent">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Quazzu</a>
+        <a href="#" data-activates="mobile-nav" class="button-collapse">
+          <i class="fa fa-bars"></i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="/quazzu">Home</a>
+          </li>
+          <li>
+            <a href="/solutions">Solutions</a>
+          </li>
+          <li>
+            <a class="active-link" href="/signup">Sign Up</a>
+          </li>
+          <li>
+            <a href="#login-modal" class="btn purple modal-trigger">Login</a>
+          </li>
+          <li>
+            <a class='dropdown-button btn btn-large transparent' href='#' data-activates='css1'>Projects</a>
+            <ul id='css1' class='dropdown-content'>
+              <li>
+                <a href="/travelville">TravelVille</a>
+              </li>
+              <li>
+                <a href="/quazzu">Quazzu</a>
+              </li>
+              <li>
+                <a href="/madmin">M-Admin</a>
+              </li>
+              <li>
+                <a href="bizland">Bizland</a>
+              </li>
+              <li>
+                <a href="galappear">Galappear</a>
+              </li>
+              {{!-- <li>
+                <a href="2_6_collections.html">Collections & Badges</a>
+              </li>
+              <li>
+                <a href="2_7_grid.html">The Grid</a>
+              </li> --}}
+            </ul>
+          </li>
+          <li>
+            <a href="https://facebook.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-nav">
+          <h4 class="purple-text text-darken-4 center">Quazzu</h4>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="/quazzu">
+              <i class="fa fa-home grey-text text-darken-4"></i> Home</a>
+          </li>
+          <li>
+            <a href="/solutions">
+              <i class="fa fa-cog grey-text text-darken-4"></i> Solutions</a>
+          </li>
+          <li>
+            <a href="/signup">
+              <i class="fa fa-users grey-text text-darken-4"></i> Sign Up</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="#" class="btn purple">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="showcase container">
+    <div class="row">
+      <div class="col s12 m10 offset-m1 center">
+        <h5>Welcome To Quazzu</h5>
+        <h1>Create an Account for Free</h1>
+        {{!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit fugit deserunt quos provident aliquam
+          inventore.</p>
+        <br>
+        <br>
+        <a href="solutions.html" class="btn btn-large white purple-text">Learn More</a>
+        <a href="signup.html" class="btn btn-large purple white-text">Sign Up</a> --}}
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <h4>Account Login</h4>
+    <p>Log in to access your account dashboard</p>
+    <form action="">
+      <div class="input-field">
+        <input type="email" id="email">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password">
+        <label for="password">Password</label>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="modal-action modal-close btn grey">
+      <i class="fa fa-sync"></i> Reset Password
+    </a>
+    <a href="#" class="modal-action modal-close btn grey">
+      <i class="fa fa-lock"></i> Login
+    </a>
+  </div>
+</div>
+
+<section class="section section-signup">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <h4>Get a Free Account</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, a explicabo. Neque voluptatum ipsa deleniti
+          sequi perspiciatis maiores provident fugiat!</p>
+        <h4>Download the Free Software</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, a explicabo. Neque voluptatum ipsa deleniti
+          sequi perspiciatis maiores provident fugiat!</p>
+        <h4>Push to the Platform</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, a explicabo. Neque voluptatum ipsa deleniti
+          sequi perspiciatis maiores provident fugiat!</p>
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
+          <form action="">
+            <div class="input-field">
+              <input type="text" id="first_name">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="last_name">
+              <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="password">
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="company">
+              <label for="company">Company</label>
+            </div>
+            <div class="input-field">
+              <select id="role">
+                <option value="" disabled selected>Select Role</option>
+                <option value="professional">Professional</option>
+                <option value="hobbylist">Hobbylist</option>
+                <option value="manager">Manager</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="role">Role</label>
+            </div>
+            <input type="submit" value="signup" class="btn btn-large purple btn-extend">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{>footer_home_b}}
+
+<script>
+  $(document).ready(function () {
+    // Custom JS & jQuery here
+    $('.parallax').parallax();
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+    });
+    $('.button-collapse').sideNav();
+    $('.modal').modal();
+    $('select').material_select();
+    $('.dropdown-button').dropdown({
+      constrainWidth: false,
+      belowOrigin: true,
+      alignment: 'right'
+    });
+  });
+</script>

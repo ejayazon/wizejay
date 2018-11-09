@@ -18,11 +18,23 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
+  res.redirect('/travelville');
+});
+
+app.get('/travelville', function(req, res) {
   res.render('client/project_a');
 });
 
-app.get('/project_b', function(req, res) {
+app.get('/quazzu', function(req, res) {
   res.render('client/project_b');
+});
+
+app.get('/solutions', function(req, res) {
+  res.render('client/project_b_solutions');
+});
+
+app.get('/signup', function(req, res) {
+  res.render('client/project_b_signup');
 });
 
 app.listen(4000, function() {
