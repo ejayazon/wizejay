@@ -100,3 +100,20 @@
   display: block;
   width: 100%;
 }
+
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+
+.btn-extended {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.login {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}

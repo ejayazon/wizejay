@@ -37,6 +37,34 @@ app.get('/signup', function(req, res) {
   res.render('client/project_b_signup');
 });
 
+app.get('/madmin', function(req, res) {
+  res.render('client/project_c');
+});
+
+app.get('/details', function(req, res) {
+  res.render('client/project_c_details');
+});
+
+app.get('/posts', function(req, res) {
+  res.render('client/project_c_posts');
+});
+
+app.get('/categories', function(req, res) {
+  res.render('client/project_c_categories');
+});
+
+app.get('/comments', function(req, res) {
+  res.render('client/project_c_comments');
+});
+
+app.get('/users', function(req, res) {
+  res.render('client/project_c_users');
+});
+
+app.get('/login', function(req, res) {
+  res.render('client/project_c_login');
+});
+
 app.listen(4000, function() {
   console.log('Server started at port 4000');
 });
