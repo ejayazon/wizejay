@@ -65,6 +65,10 @@ app.get('/login', function(req, res) {
   res.render('client/project_c_login');
 });
 
+app.get('/bizland', function(req, res) {
+  res.render('client/project_d');
+});
+
 app.listen(4000, function() {
   console.log('Server started at port 4000');
 });

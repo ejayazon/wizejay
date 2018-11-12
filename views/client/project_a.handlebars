@@ -1,4 +1,90 @@
-{{>navbar_home_1}}
+<header>
+  <title>TravelVille|Home</title>
+</header>
+
+<div class="navbar-fixed">
+  <nav class="teal">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-logo"> <i class="material-icons large">near_me</i> Travelville</a>
+        <a href="#" data-activates="mobile-nav" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#search">Search</a>
+          </li>
+          <li>
+            <a href="#popular">Popular Places</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class='dropdown-button btn btn-large transparent' href='#' data-activates='css1'>Projects</a>
+            <ul id='css1' class='dropdown-content'>
+              <li>
+                <a href="/travelville">TravelVille</a>
+              </li>
+              <li>
+                <a href="/quazzu">Quazzu</a>
+              </li>
+              <li>
+                <a href="/madmin">M-Admin</a>
+              </li>
+              <li>
+                <a href="bizland">Bizland</a>
+              </li>
+              <li>
+                <a href="galappear">Galappear</a>
+              </li>
+              {{!-- <li>
+                <a href="2_6_collections.html">Collections & Badges</a>
+              </li>
+              <li>
+                <a href="2_7_grid.html">The Grid</a>
+              </li> --}}
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<ul class="side-nav" id="mobile-nav">
+  <li>
+    <a href="#home"><i class="material-icons left">home</i>Home</a>
+  </li>
+  <li>
+    <a href="#search"><i class="material-icons left">search</i>Search</a>
+  </li>
+  <li>
+    <a href="#popular"><i class="material-icons left">star</i>Popular</a>
+  </li>
+  <li>
+    <a href="#gallery"><i class="material-icons left">panorama</i>Gallery</a>
+  </li>
+  <li>
+    <a href="#contact"><i class="material-icons left">call</i>Contact Us</a>
+  </li>
+</ul>
+
+<script>
+  $(document).ready(function () {
+    $('.button-collapse').sideNav();
+    $('.dropdown-button').dropdown({
+      constrainWidth: false,
+      belowOrigin: true,
+      alignment: 'right'
+    });
+  });
+</script>
 
 <section id="home" class="slider scrollspy">
   <ul class="slides">
@@ -252,7 +338,10 @@
   </div>
 </section>
 
-{{>footer_home_1}}
+<footer class="section teal darken-2 white-text center">
+  <p class="flow-text">TravelVille &copy; 2018
+  </p>
+</footer>
 
 <script>
   $(document).ready(function () {
