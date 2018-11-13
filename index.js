@@ -69,6 +69,10 @@ app.get('/bizland', function(req, res) {
   res.render('client/project_d');
 });
 
+app.get('/galappear', function(req, res) {
+  res.render('client/project_e');
+});
+
 app.listen(4000, function() {
   console.log('Server started at port 4000');
 });
