@@ -1,11 +1,8 @@
 @import './materialize';
-// importing materialize so we can use their variable
 
-// VARS
 $header-bg: url(../img/pattern.png);
 $header-height: 300px;
 
-// TEXT COLOR FUNCTION
 @function set-text-color($color) {
   @if (lightness($color) > 50) {
     @return #000;
@@ -17,7 +14,6 @@ $header-height: 300px;
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
-  // we're passing in whatever is being used as a background color, so depending on the background color it will either lighten or darken the text color
 }
 
 .main-header {
@@ -59,5 +55,4 @@ body {
 .row-2,
 .row-3 {
   opacity: 0;
-  // opacity of 0 to begin with because we're fading them in with ScrollFire
 }
