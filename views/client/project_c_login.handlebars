@@ -8,7 +8,7 @@
         <a href="/madmin" class="brand-logo">M-Admin</a>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a class='dropdown-button btn btn-large blue lighten-1 white  -text' href='#' data-activates='dropdown-1'>Projects</a>
+            <a class='dropdown-button btn transparent' href='#' data-activates='dropdown-1'>Projects</a>
             <ul id='dropdown-1' class='dropdown-content'>
               <li>
                 <a href="/travelville">TravelVille</a>
@@ -84,6 +84,7 @@
       $('.section').fadeIn();
       $('.loader').fadeOut();
       $('.dropdown-button').dropdown({
+        constrainWidth: false,
         belowOrigin: true,
         alignment: 'right'
       });

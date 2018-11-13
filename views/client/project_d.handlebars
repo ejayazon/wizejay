@@ -28,6 +28,26 @@
                 <li>
                   <a href="#" class="btn blue">Download</a>
                 </li>
+                <li>
+                  <a class='dropdown-button btn transparent' href='#' data-activates='dropdown-1'>Projects</a>
+                  <ul id='dropdown-1' class='dropdown-content'>
+                    <li>
+                      <a href="/travelville">TravelVille</a>
+                    </li>
+                    <li>
+                      <a href="/quazzu">Quazzu</a>
+                    </li>
+                    <li>
+                      <a href="/madmin">M-Admin</a>
+                    </li>
+                    <li>
+                      <a href="bizland">Bizland</a>
+                    </li>
+                    <li>
+                      <a href="galappear">Galappear</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -260,6 +280,11 @@
 
 <script>
   $(document).ready(function () {
+    $('.dropdown-button').dropdown({
+      constrainWidth: false,
+      belowOrigin: true,
+      alignment: 'right'
+    });
     $('.button-collapse').sideNav();
     $('.scrollspy').scrollSpy();
     const options = [

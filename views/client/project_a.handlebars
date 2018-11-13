@@ -27,8 +27,8 @@
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a class='dropdown-button btn btn-large transparent' href='#' data-activates='css1'>Projects</a>
-            <ul id='css1' class='dropdown-content'>
+            <a class='dropdown-button btn transparent' href='#' data-activates='dropdown-1'>Projects</a>
+            <ul id='dropdown-1' class='dropdown-content'>
               <li>
                 <a href="/travelville">TravelVille</a>
               </li>
@@ -44,12 +44,6 @@
               <li>
                 <a href="galappear">Galappear</a>
               </li>
-              {{!-- <li>
-                <a href="2_6_collections.html">Collections & Badges</a>
-              </li>
-              <li>
-                <a href="2_7_grid.html">The Grid</a>
-              </li> --}}
             </ul>
           </li>
         </ul>
@@ -74,17 +68,6 @@
     <a href="#contact"><i class="material-icons left">call</i>Contact Us</a>
   </li>
 </ul>
-
-<script>
-  $(document).ready(function () {
-    $('.button-collapse').sideNav();
-    $('.dropdown-button').dropdown({
-      constrainWidth: false,
-      belowOrigin: true,
-      alignment: 'right'
-    });
-  });
-</script>
 
 <section id="home" class="slider scrollspy">
   <ul class="slides">
@@ -345,6 +328,11 @@
 
 <script>
   $(document).ready(function () {
+    $('.dropdown-button').dropdown({
+      constrainWidth: false,
+      belowOrigin: true,
+      alignment: 'right'
+    });
     $('.slider').slider({
       indicators: false,
       height: 750,

@@ -16,7 +16,7 @@
           <li><a href="/comments">Comments</a></li>
           <li><a href="/users">Users</a></li>
           <li>
-            <a class='dropdown-button btn btn-large blue lighten-1 white  -text' href='#' data-activates='dropdown-1'>Projects</a>
+            <a class='dropdown-button btn transparent' href='#' data-activates='dropdown-1'>Projects</a>
             <ul id='dropdown-1' class='dropdown-content'>
               <li>
                 <a href="/travelville">TravelVille</a>
@@ -172,6 +172,7 @@
       $('.loader').fadeOut();
       $('.button-collapse').sideNav();
       $('.dropdown-button').dropdown({
+        constrainWidth: false,
         belowOrigin: true,
         alignment: 'right'
       });
