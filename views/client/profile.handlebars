@@ -10,7 +10,7 @@
       <nav class="transparent">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="/bizland" class="brand-logo">Bizland</a>
+            <a href="#home" class="brand-logo">EJAY</a>
             <a href="#" data-activates="mobile-nav" class="button-collapse">
               <i class="material-icons">menu</i>
             </a>
@@ -22,13 +22,10 @@
                 <a href="#projects">Projects</a>
               </li>
               <li>
-                <a href="#testimonials">Testimonials</a>
+                <a href="#aboutme">About Me</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
-              </li>
-              <li>
-                <a href="#" class="btn blue">Download</a>
               </li>
               <li>
                 <a class='dropdown-button btn transparent' href='#' data-activates='dropdown-1'>Projects</a>
@@ -88,7 +85,57 @@
     </div>
   </section>
 
+  <section id="icons" class="section section-icons center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="card-panel">
+            <h4 class="black-text">PROJECTS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col s12 m6 l2 xl2 offset-xl1 offset-l1">
+        <a href="/travelville">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">room</i>
+            <h4 class="black-text">TravelVille</h4>
+            <p class="black-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quo.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col s12 m6 l2 xl2">
+        <div class="card-panel ">
+          <i class="material-icons large teal-text">room</i>
+          <h4 class="black-text">Pick Where</h4>
+          <p class="black-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quo.</p>
+        </div>
+      </div>
+      <div class="col s12 m6 l2 xl2">
+        <div class="card-panel ">
+          <i class="material-icons large teal-text">room</i>
+          <h4 class="black-text">Pick Where</h4>
+          <p class="black-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quo.</p>
+        </div>
+      </div>
+      <div class="col s12 m6 l2 xl2">
+        <div class="card-panel">
+          <i class="material-icons large teal-text">store</i>
+          <h4 class="black-text">Souvenir Shop</h4>
+          <p class="black-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quo.</p>
+        </div>
+      </div>
+      <div class="col s12 m6 l2 xl2">
+        <div class="card-panel">
+          <i class="material-icons large teal-text">airplanemode_active</i>
+          <h4 class="black-text">Fly High</h4>
+          <p class="black-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, quo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="projects" class="section-slider slider scrollspy" style="height: 100vh;">
     <ul class="slides" style="height: 100vh;">
@@ -290,20 +337,9 @@
       transition: 1000,
       interval: 8000
     });
-
-    $('.autocomplete').autocomplete({
-      data: {
-        "Antique": null,
-        "Boracay": null,
-        "Bohol": null,
-        "Cebu": null,
-        "Mindoro": null,
-        "Palawan": null,
-      },
-      minLength: 0,
-    });
-
     $('.scrollspy').scrollSpy();
+    $('.button-collapse').sideNav();
+
     const options = [
       {
         selector: '.row-1', offset: 480, callback: function (el) {
@@ -318,6 +354,11 @@
       {
         selector: '.row-3', offset: 580, callback: function (el) {
           Materialize.fadeInImage($(el));
+        }
+      },
+      {
+        selector: '.navbar-fixed', offset: 2080, callback: function () {
+          $('nav').removeClass('transparent').addClass('grey darken-3');
         }
       }
     ];
