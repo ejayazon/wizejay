@@ -128,9 +128,17 @@
   position: relative;
 }
 
+.section-slider {
+  height: 100vh;
+}
+
+.slides {
+  height: 100vh;
+}
+
 .primary-overlay-bizland {
   background: rgba(63, 57, 77, 0.5);
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;

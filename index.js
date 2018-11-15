@@ -18,7 +18,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-  res.redirect('/travelville');
+  res.render('client/profile');
 });
 
 app.get('/travelville', function(req, res) {
